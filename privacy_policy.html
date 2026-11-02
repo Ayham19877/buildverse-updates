@@ -15,13 +15,13 @@
 <body>
 
 <h1>Privacy Policy — BuildVerse</h1>
-<p class="meta">Last updated: October 21, 2026 · Developer: Shaheen Company · Contact: <a href="mailto:shahenn.co@gmail.com">shahenn.co@gmail.com</a></p>
+<p class="meta">Last updated: November 2, 2026 · Developer: Shaheen Company · Contact: <a href="mailto:shahenn.co@gmail.com">shahenn.co@gmail.com</a></p>
 
 <p>BuildVerse is a creative block-building game <b>for everyone — suitable and safe for all ages</b>. This policy explains, in simple words, what information the game uses, when, and why. By using the game you agree to this policy.</p>
 
 <h2>1. The short version</h2>
 <ul>
-  <li>There is <b>no sign-up</b> — no email, no password. Your progress is tied to a <b>secret account code</b> generated on your device (Section 6). We never ask for a real name, email address, phone number, or date of birth.</li>
+  <li>Since v1.114, sign-in is by <b>email address and password</b> (Section 6). Your email address is collected <b>for authentication only</b> — to sign you in, to send an activation link when you create an account, and to send a password-reset link if you forget your password. It is never sold, never used for advertising, and never shared with anyone except the authentication provider (Google Firebase Authentication) that verifies it. We never ask for a real name, phone number, or date of birth.</li>
   <li>The game works <b>fully offline</b> for single-player building.</li>
   <li>Online features (cloud backup, sharing a world, live multiplayer) are <b>optional</b> and only activate when the player explicitly chooses them.</li>
   <li>Your profile picture is a <b>built-in badge</b> chosen inside the game — or, optionally, a <b>photo you pick yourself</b> from your device (Section 3).</li>
@@ -35,7 +35,7 @@
   <li>Worlds the player builds, and their names.</li>
   <li>Game progress: diamonds, stars, gifts, and items owned in the in-game shop.</li>
   <li>Settings: language, sound, music, and control preferences.</li>
-  <li>The player profile: the display name (Section 3), the chosen avatar badge (or personal photo, if set), your secret account code, and — if you use them — your friends list and chat groups (Section 7).</li>
+  <li>The player profile: the display name (Section 3), the chosen avatar badge (or personal photo, if set), your email account (Section 6), and — if you use them — your friends list and chat groups (Section 7).</li>
 </ul>
 
 <h2>3. The display name</h2>
@@ -54,17 +54,18 @@
 </ul>
 <p>Sessions are joined only by entering a code shared between people who know each other — there is no public directory and no way for strangers to find or contact a player. Chat safety is built into the game: a word filter blocks offensive messages on the sender's device before they are sent, repeated violations automatically restrict the sender's chatting for a period of time (Section 7), and the room's owner can mute or remove a player from their room. Room data, including its chat, is kept under the room's code and is not used for any other purpose; you may ask us to delete a room's data at any time by emailing us with its code.</p>
 
-<h2>6. Your secret account code &amp; cloud backup</h2>
-<p>So your progress survives a lost or changed phone, the game generates a random <b>secret account code</b> on your device (it looks like <code>BV-XXXX-XXXX-XXXX</code>). The code <b>is</b> your account — there is no email, no password, and nothing to sign up for.</p>
+<h2>6. Your email account &amp; cloud backup (since v1.114)</h2>
+<p>So your progress survives a lost or changed phone, you sign in with an <b>email address and a password</b>. When you create an account, an <b>activation link</b> is sent to your email — open it to activate the account before playing. If you forget your password, a <b>reset link</b> is sent to your email from inside the game. Your password is never stored by us in readable form; it is handled only by Google Firebase Authentication. Older versions used a secret account code instead; players still signed in under that system are offered a one-time link to an email account when they update, after which no code is shown or used anywhere. A device signed out under the old system without its code cannot be recovered by email, because no email was ever attached to it.</p>
 <ul>
-  <li>The game regularly backs up to our cloud database (Google Firebase Realtime Database), stored under your account code: your worlds, diamonds, stars and gifts, items owned in the shop, your player profile (display name, avatar badge and personal photo if you set one), your friends list, pending sent friend requests, block list and chat groups (Section 7), your chat restriction state, and your settings. You can also back up manually at any time from the "🔑 The Secret Code" screen, which shows when the last successful backup happened.</li>
-  <li>Entering your code on any device restores that backup onto it, replacing the progress on that device.</li>
-  <li><b>Keep your code somewhere safe.</b> Anyone who has your code can restore your backup, so share it only with people you trust. The code is not linked to any personal information, which also means <b>we cannot recover a lost code</b> or verify who a code belongs to.</li>
-  <li>To delete your cloud backup, email us at <a href="mailto:shahenn.co@gmail.com">shahenn.co@gmail.com</a> with your account code and we will remove it.</li>
+  <li>The game regularly backs up to our cloud database (Google Firebase Realtime Database), stored under your email account: your worlds, diamonds, stars and gifts, items owned in the shop, your player profile (display name, avatar badge and personal photo if you set one), your friends list, pending sent friend requests, block list and chat groups (Section 7), your chat restriction state, and your settings. You can also back up manually at any time from the Account screen, which shows when the last successful backup happened.</li>
+  <li>Signing in with your email and password on any device restores that backup onto it, merging with the progress on that device (merging always takes the highest values, so nothing duplicates).</li>
+  <li><b>Keep your email and password safe.</b> Anyone who has them can sign in as you, so share them with nobody. If you lose access to your email, use the password-reset link; if you lose both, contact us and we will verify ownership before helping.</li>
+  <li>To delete your cloud backup, email us at <a href="mailto:shahenn.co@gmail.com">shahenn.co@gmail.com</a> from the email address of the account and we will remove it.</li>
 </ul>
+<p><b>Note:</b> the published privacy page in the updates repository must be updated with this same section before general publication of v1.114.</p>
 
 <h2>7. Friends, chat groups and your public friend code</h2>
-<p>Every player also has a <b>public friend code</b> (it looks like <code>F-XXXX-XXXX</code>), shown in the profile and on the Friends screen. It is <b>completely separate from the secret account code</b>: sharing the friend code is safe — all it lets another player do is send you a friend request.</p>
+<p>Every player also has a <b>public friend code</b> (it looks like <code>F-XXXX-XXXX</code>), shown in the profile and on the Friends screen. It is <b>completely separate from your email account</b>: sharing the friend code is safe — all it lets another player do is send you a friend request.</p>
 <ul>
   <li><b>Adding is by code only — and by consent.</b> There is no directory, search, or discovery of players: nobody can find you, or send you a request, without your friend code. Entering a player's code sends them a <b>friend request</b> — nothing is added until they <b>accept</b> it. They may decline it or simply clear it from their notifications, and the sender is never told either way. Accepting adds each of you to the other's friends list, and either side can remove the friendship at any time (the removal applies both ways). Pending requests wait in a <b>notifications</b> area at the top of the Friends screen, together with room and group invitations, and the Friends button on the main menu shows a small count badge while any are pending.</li>
   <li><b>What the game stores for friends:</b> for each friend — their friend code, display name, profile picture, and a rough "last seen" time so the list can show who is around. So that your friends' games can display this, a small <b>public card</b> with the same data is stored under your friend code in the same Firebase database; anyone who knows your friend code can see that card. Your friends list itself is stored on your device and in your cloud backup (Section 6). A pending friend request stores the same card data in the recipient's request box (under their friend code) until it is accepted, declined or cleared.</li>
@@ -85,17 +86,17 @@
 <h2>9. Safety for everyone</h2>
 <p>BuildVerse is made to be safe for players of every age:</p>
 <ul>
-  <li>We do not knowingly collect personal information from anyone, including children — the game is designed so that it never requires any. The only identifiers used online are a player-chosen nickname, a profile picture (a built-in badge, or a photo the player picks), and random codes.</li>
+  <li>Since v1.114 the game collects one piece of personal information: the <b>email address used to sign in</b>, for authentication only (Section 6). Nothing else personal is collected from anyone, including children — the game never requires a real name, phone number, or date of birth. The other identifiers used online are a player-chosen nickname, a profile picture (a built-in badge, or a photo the player picks), and random codes.</li>
   <li>Chat exists only inside code-joined rooms and friend groups, with a built-in word filter, automatic restrictions and owner moderation tools (Sections 5 and 7). No advertising, no behavioral tracking, no profiling.</li>
   <li>In-app purchases, when offered in the future, will always be protected by a safety gate and processed by Google Play; we never see or store payment card details.</li>
-  <li>You can contact us at <a href="mailto:shahenn.co@gmail.com">shahenn.co@gmail.com</a> to request deletion of any data associated with a share code, an account code, a friend code, or a session, or to ask any question about this policy.</li>
+  <li>You can contact us at <a href="mailto:shahenn.co@gmail.com">shahenn.co@gmail.com</a> to request deletion of any data associated with a share code, an email account, a friend code, or a session, or to ask any question about this policy.</li>
 </ul>
 
 <h2>10. Third-party services</h2>
-<p>The game uses <b>Google Firebase Realtime Database</b> solely to power the optional backup, sharing, multiplayer, friends and chat features described above. Google processes this data as described in Google's own privacy documentation. The game contains no other third-party data services, no advertising networks, and no analytics providers.</p>
+<p>The game uses <b>Google Firebase Realtime Database</b> solely to power the optional backup, sharing, multiplayer, friends and chat features described above, and <b>Google Firebase Authentication</b> solely to verify email sign-in, activation links and password-reset links (Section 6). Google processes this data as described in Google's own privacy documentation. The game contains no other third-party data services, no advertising networks, and no analytics providers.</p>
 
 <h2>11. Data security and retention</h2>
-<p>Data is transferred over encrypted connections (HTTPS/WSS). Cloud backups are kept under your account code until you ask us to delete them (Section 6). Shared worlds are kept until the owner asks us to remove them, or until we periodically clean up inactive shared data. Room data (including its chat) is kept under the room's code until the owner asks us to remove it or we clean up inactive rooms, and group messages are kept while the group exists. Because players provide no accounts or personal identifiers, most data in the game cannot be linked to a specific person.</p>
+<p>Data is transferred over encrypted connections (HTTPS/WSS). Cloud backups are kept under your email account until you ask us to delete them (Section 6). Shared worlds are kept until the owner asks us to remove them, or until we periodically clean up inactive shared data. Room data (including its chat) is kept under the room's code until the owner asks us to remove it or we clean up inactive rooms, and group messages are kept while the group exists. Apart from the email address used for authentication, the game cannot link its data to a specific person.</p>
 
 <h2>12. Changes to this policy</h2>
 <p>If we change this policy — for example, if we add features that use data in a new way — we will update this page and change the "Last updated" date above before the change takes effect in the game.</p>
@@ -111,7 +112,7 @@
 
 <h2>1. الخلاصة</h2>
 <ul>
-  <li><b>لا يوجد تسجيل</b> — لا بريد إلكتروني ولا كلمة سر. تقدمك مرتبط بـ<b>كود حساب سري</b> يُولَّد على جهازك (البند 6). لا نطلب أبداً اسماً حقيقياً أو بريداً إلكترونياً أو رقم هاتف أو تاريخ ميلاد.</li>
+  <li>منذ v1.114، الدخول بـ<b>البريد الإلكتروني وكلمة السر</b> (البند 6). بريدك الإلكتروني يُجمع <b>للمصادقة فقط</b> — للدخول، ولإرسال رابط تفعيل عند إنشاء الحساب، ولإرسال رابط إعادة تعيين كلمة السر عند نسيانها. لا يُباع أبداً ولا يُستخدم للإعلان ولا يُشارك مع أحد عدا مزود المصادقة (Google Firebase Authentication) الذي يتحقق منه. لا نطلب أبداً اسماً حقيقياً أو رقم هاتف أو تاريخ ميلاد.</li>
   <li>اللعبة تعمل <b>دون إنترنت بالكامل</b> في اللعب الفردي والبناء.</li>
   <li>المزايا عبر الإنترنت (النسخ الاحتياطي السحابي، مشاركة عالم، لعب جماعي حي) <b>اختيارية</b> ولا تعمل إلا عندما يختارها اللاعب بنفسه.</li>
   <li>صورة ملفك التعريفي <b>شارة جاهزة داخل اللعبة</b> — أو، إن أردت، <b>صورة تختارها بنفسك</b> من جهازك (البند 3).</li>
@@ -144,17 +145,18 @@
 </ul>
 <p>الدخول إلى الجلسات يكون فقط بكود يتبادله أشخاص يعرفون بعضهم — لا يوجد أي دليل عام ولا أي وسيلة لتواصل الغرباء مع اللاعب أو العثور عليه. أمان الدردشة مدمج في اللعبة: فلتر كلمات يمنع الرسائل المسيئة على جهاز المُرسل قبل إرسالها، وتكرار المخالفات يقيّد كتابة المُرسل تلقائياً لمدة زمنية (البند 7)، وصاحب الغرفة يستطيع كتم أي لاعب أو إخراجه من غرفته. تُحفظ بيانات الغرفة، بما فيها دردشتها، تحت كود الغرفة ولا تُستخدم لأي غرض آخر؛ ويمكنك طلب حذف بيانات أي غرفة في أي وقت عبر مراسلتنا مع ذكر كودها.</p>
 
-<h2>6. كود حسابك السري والنسخ الاحتياطي السحابي</h2>
-<p>لكي يبقى تقدمك آمناً عند ضياع الهاتف أو تغييره، تولّد اللعبة <b>كود حساب سرياً</b> عشوائياً على جهازك (يبدو هكذا: <code>BV-XXXX-XXXX-XXXX</code>). هذا الكود <b>هو</b> حسابك — لا بريد إلكتروني، ولا كلمة سر، ولا تسجيل.</p>
+<h2>6. حساب بريدك الإلكتروني والنسخ الاحتياطي السحابي (منذ v1.114)</h2>
+<p>لكي يبقى تقدمك آمناً عند ضياع الهاتف أو تغييره، تدخل بـ<b>البريد الإلكتروني وكلمة السر</b>. عند إنشاء حساب يُرسل <b>رابط تفعيل</b> إلى بريدك — افتحه لتفعيل الحساب قبل اللعب. وإن نسيت كلمة السر يُرسل <b>رابط إعادة تعيين</b> إلى بريدك من داخل اللعبة. كلمة سرك لا تُخزن لدينا بصيغة مقروءة أبداً؛ يعالجها فقط Google Firebase Authentication. النسخ القديمة كانت تستخدم كود حساب سرياً بدلاً من ذلك؛ ومن ما زال مسجلاً دخوله بذلك النظام يُعرض عليه عند التحديث ربط لمرة واحدة بحساب بريد إلكتروني، وبعده لا يظهر أي كود ولا يُستخدم في أي مكان. أما الجهاز المسجَّل خروجه بالنظام القديم بلا كوده فلا يمكن استعادته بالبريد، لأنه لم يُربط به بريد أبداً.</p>
 <ul>
-  <li>تنسخ اللعبة تقدمك احتياطياً بانتظام إلى قاعدة بياناتنا السحابية (Google Firebase Realtime Database) محفوظاً تحت كود حسابك: عوالمك، وماساتك ونجومك وهداياك، والعناصر المملوكة في المتجر، وملفك التعريفي (اسم العرض وشارة الأفاتار وصورتك الشخصية إن عيّنتها)، وقائمة أصدقائك ومجموعات دردشتك (البند 7)، وحالة قيود الكتابة الخاصة بك، وإعداداتك. ويمكنك أيضاً النسخ يدوياً في أي وقت من شاشة «🔑 الرمز السري»، والتي تعرض وقت آخر نسخة ناجحة.</li>
-  <li>إدخال كودك على أي جهاز يسترجع تلك النسخة إليه، ويستبدل تقدم ذلك الجهاز.</li>
-  <li><b>احتفظ بكودك في مكان آمن.</b> أي شخص يملك كودك يستطيع استرجاع نسختك، فشاركه فقط مع من تثق بهم. الكود غير مرتبط بأي معلومات شخصية، وهذا يعني أيضاً أننا <b>لا نستطيع استرجاع كود مفقود</b> أو التحقق من مالك أي كود.</li>
-  <li>لحذف نسختك الاحتياطية السحابية، راسلنا عبر <a href="mailto:shahenn.co@gmail.com">shahenn.co@gmail.com</a> مع ذكر كود حسابك وسنزيلها.</li>
+  <li>تنسخ اللعبة تقدمك احتياطياً بانتظام إلى قاعدة بياناتنا السحابية (Google Firebase Realtime Database) محفوظاً تحت حساب بريدك: عوالمك، وماساتك ونجومك وهداياك، والعناصر المملوكة في المتجر، وملفك التعريفي (اسم العرض وشارة الأفاتار وصورتك الشخصية إن عيّنتها)، وقائمة أصدقائك ومجموعات دردشتك (البند 7)، وحالة قيود الكتابة الخاصة بك، وإعداداتك. ويمكنك أيضاً النسخ يدوياً في أي وقت من شاشة الحساب، والتي تعرض وقت آخر نسخة ناجحة.</li>
+  <li>الدخول ببريدك وكلمة سرك على أي جهاز يسترجع تلك النسخة إليه، مع دمجها بتقدم ذلك الجهاز (الدمج يأخذ دائماً القيم الأعلى فلا ازدواج).</li>
+  <li><b>احتفظ ببريدك وكلمة سرك في مكان آمن.</b> أي شخص يملكهما يستطيع الدخول باسمك، فلا تشاركهما مع أحد. وإن فقدت الوصول إلى بريدك استخدم رابط إعادة تعيين كلمة السر؛ وإن فقدت الاثنين راسلنا وسنتحقق من الملكية قبل المساعدة.</li>
+  <li>لحذف نسختك الاحتياطية السحابية، راسلنا عبر <a href="mailto:shahenn.co@gmail.com">shahenn.co@gmail.com</a> من بريد حسابك وسنزيلها.</li>
 </ul>
+<p><b>ملاحظة:</b> صفحة السياسة المنشورة بمستودع التحديثات يجب أن تُحدَّث بهذا البند نفسه قبل النشر العام لـv1.114.</p>
 
 <h2>7. الأصدقاء ومجموعات الدردشة وكود صداقتك العام</h2>
-<p>لكل لاعب أيضاً <b>كود صداقة عام</b> (يبدو هكذا: <code>F-XXXX-XXXX</code>) يظهر في الملف التعريفي وفي شاشة الأصدقاء. وهو <b>منفصل تماماً عن كود الحساب السري</b>: مشاركته آمنة — وكل ما يتيحه للاعب آخر هو إرسال طلب صداقة إليك.</p>
+<p>لكل لاعب أيضاً <b>كود صداقة عام</b> (يبدو هكذا: <code>F-XXXX-XXXX</code>) يظهر في الملف التعريفي وفي شاشة الأصدقاء. وهو <b>منفصل تماماً عن حساب بريدك الإلكتروني</b>: مشاركته آمنة — وكل ما يتيحه للاعب آخر هو إرسال طلب صداقة إليك.</p>
 <ul>
   <li><b>الإضافة بالكود فقط — وبالموافقة.</b> لا يوجد دليل ولا بحث ولا اكتشاف للاعبين: لا أحد يستطيع العثور عليك أو إرسال طلب إليك دون كود صداقتك. إدخال كود لاعب يرسل إليه <b>طلب صداقة</b> — ولا يُضاف شيء حتى <b>يقبله</b>. ويستطيع المستقبِل رفض الطلب أو مسحه ببساطة من إشعاراته، ولا يُبلَّغ المُرسل بأيٍّ من الحالين. والقبول يضيف كلاً منكما إلى قائمة أصدقاء الآخر، ويستطيع أي طرف حذف الصداقة في أي وقت (يسري الحذف على الطرفين). تنتظر الطلبات المعلّقة في قسم <b>إشعارات</b> أعلى شاشة الأصدقاء، إلى جانب دعوات الغرف والمجموعات، ويعرض زر «الأصدقاء» في القائمة الرئيسية شارة عدد صغيرة ما دام أيٌّ منها معلّقاً.</li>
   <li><b>ما تحفظه اللعبة عن الأصدقاء:</b> لكل صديق — كود صداقته واسم عرضه وصورة ملفه التعريفي ووقت ظهور تقريبي («آخر ظهور») لتعرض القائمة من هو موجود. ولكي تعرضها ألعاب أصدقائك، تُحفظ <b>بطاقة عامة</b> صغيرة بنفس البيانات تحت كود صداقتك في قاعدة بيانات Firebase نفسها؛ أي شخص يعرف كود صداقتك يستطيع رؤية تلك البطاقة. أما قائمة أصدقائك نفسها فتُحفظ على جهازك وفي نسختك الاحتياطية السحابية (البند 6). ويحفظ طلب الصداقة المعلّق بيانات البطاقة نفسها في صندوق طلبات المستقبِل (تحت كود صداقته) حتى يُقبل أو يُرفض أو يُمسح.</li>
@@ -175,17 +177,17 @@
 <h2>9. الأمان للجميع</h2>
 <p>صُنعت BuildVerse لتكون آمنة للاعبين من كل الأعمار:</p>
 <ul>
-  <li>لا نجمع عن قصد أي معلومات شخصية من أي شخص، بمن فيهم الأطفال — اللعبة مصممة بحيث لا تتطلب أيّاً منها أبداً. المعرفات الوحيدة المستخدمة عبر الإنترنت هي لقب يختاره اللاعب، وصورة ملف تعريفي (شارة جاهزة أو صورة يختارها اللاعب)، وأكواد عشوائية.</li>
+  <li>منذ v1.114 تجمع اللعبة معلومة شخصية واحدة: <b>البريد الإلكتروني المستخدم للدخول</b>، للمصادقة فقط (البند 6). ولا تُجمع أي معلومة شخصية أخرى من أي شخص، بمن فيهم الأطفال — اللعبة لا تتطلب أبداً اسماً حقيقياً أو رقم هاتف أو تاريخ ميلاد. والمعرفات الأخرى المستخدمة عبر الإنترنت هي لقب يختاره اللاعب، وصورة ملف تعريفي (شارة جاهزة أو صورة يختارها اللاعب)، وأكواد عشوائية.</li>
   <li>الدردشة موجودة فقط داخل غرف منضم إليها بكود ومجموعات أصدقاء، مع فلتر كلمات مدمج وقيود تلقائية وأدوات إشراف لصاحب الغرفة (البندان 5 و7). لا إعلانات، ولا تتبع سلوكي، ولا ملفات تعريف للمستخدمين.</li>
   <li>المشتريات داخل التطبيق — عند تقديمها مستقبلاً — ستكون محمية دائماً ببوابة أمان وتُعالج عبر Google Play؛ لن نرى أو نخزن أي بيانات بطاقات دفع أبداً.</li>
-  <li>يمكنك التواصل معنا عبر <a href="mailto:shahenn.co@gmail.com">shahenn.co@gmail.com</a> لطلب حذف أي بيانات مرتبطة بكود مشاركة أو كود حساب أو كود صداقة أو جلسة، أو لطرح أي سؤال حول هذه السياسة.</li>
+  <li>يمكنك التواصل معنا عبر <a href="mailto:shahenn.co@gmail.com">shahenn.co@gmail.com</a> لطلب حذف أي بيانات مرتبطة بكود مشاركة أو حساب بريد أو كود صداقة أو جلسة، أو لطرح أي سؤال حول هذه السياسة.</li>
 </ul>
 
 <h2>10. خدمات الطرف الثالث</h2>
-<p>تستخدم اللعبة <b>Google Firebase Realtime Database</b> فقط لتشغيل مزايا النسخ الاحتياطي والمشاركة واللعب الجماعي والأصدقاء والدردشة الاختيارية الموضّحة أعلاه، وتعالج Google هذه البيانات وفق وثائق الخصوصية الخاصة بها. لا تحتوي اللعبة على أي خدمات بيانات خارجية أخرى، ولا شبكات إعلانات، ولا مزوّدي تحليلات.</p>
+<p>تستخدم اللعبة <b>Google Firebase Realtime Database</b> فقط لتشغيل مزايا النسخ الاحتياطي والمشاركة واللعب الجماعي والأصدقاء والدردشة الاختيارية الموضّحة أعلاه، و<b>Google Firebase Authentication</b> فقط للتحقق من الدخول بالبريد وروابط التفعيل وروابط إعادة تعيين كلمة السر (البند 6). وتعالج Google هذه البيانات وفق وثائق الخصوصية الخاصة بها. لا تحتوي اللعبة على أي خدمات بيانات خارجية أخرى، ولا شبكات إعلانات، ولا مزوّدي تحليلات.</p>
 
 <h2>11. أمان البيانات والاحتفاظ بها</h2>
-<p>تُنقل البيانات عبر اتصالات مشفرة (HTTPS/WSS). تُحفظ النسخ الاحتياطية السحابية تحت كود حسابك حتى تطلب حذفها (البند 6). وتُحفظ العوالم المُشاركة حتى يطلب مالكها إزالتها، أو حتى نقوم بتنظيف دوري للبيانات غير النشطة. وتُحفظ بيانات الغرفة (بما فيها دردشتها) تحت كود الغرفة حتى يطلب مالكها إزالتها أو نقوم بتنظيف الغرف غير النشطة، ورسائل المجموعات تبقى ما دامت المجموعة موجودة. وبما أن اللاعبين لا يقدمون حسابات أو معرّفات شخصية، فإن معظم بيانات اللعبة لا يمكن ربطها بشخص محدد.</p>
+<p>تُنقل البيانات عبر اتصالات مشفرة (HTTPS/WSS). تُحفظ النسخ الاحتياطية السحابية تحت حساب بريدك حتى تطلب حذفها (البند 6). وتُحفظ العوالم المُشاركة حتى يطلب مالكها إزالتها، أو حتى نقوم بتنظيف دوري للبيانات غير النشطة. وتُحفظ بيانات الغرفة (بما فيها دردشتها) تحت كود الغرفة حتى يطلب مالكها إزالتها أو نقوم بتنظيف الغرف غير النشطة، ورسائل المجموعات تبقى ما دامت المجموعة موجودة. وباستثناء البريد الإلكتروني المستخدم للمصادقة، لا يمكن ربط بيانات اللعبة بشخص محدد.</p>
 
 <h2>12. تعديل هذه السياسة</h2>
 <p>إذا عدّلنا هذه السياسة — كأن نضيف مزايا تستخدم البيانات بطريقة جديدة — سنحدّث هذه الصفحة ونغيّر تاريخ «آخر تحديث» أعلاه قبل أن يسري التعديل داخل اللعبة.</p>
